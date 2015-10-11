@@ -1,0 +1,104 @@
+/*------------------------------------*\
+    $Default Button Styles
+\*------------------------------------*/
+
+// Variables
+// =========================================================================*/
+
+// Default
+// (.btn--default) modifier
+$btn-default-color:                     $base-color-777;
+$btn-default-bg:                        $base-bg;
+$btn-default-border:                    $base-color-ccc;
+
+// Default-outline
+// (.btn--default-outline) modifier
+$btn-default-color-outline:             $base-color-777;
+$btn-default-bg-outline:                transparent;
+$btn-default-border-outline:            $base-color-777;
+
+
+
+
+
+
+/* Default Button
+==========================================================================*/
+/**
+ * Styles the button when .btn is
+ * attached to an anchor + when
+ */
+a.btn--default,
+a:hover.btn--default--gradient {
+    color: $base-color-777;
+    text-decoration: none;
+}
+
+.btn--default,
+.nav > li > a.btn--default {
+    text-shadow: none;
+    @include button-version(
+        $btn-default-color,
+        $btn-default-bg,
+        $btn-default-border
+    );
+}
+
+
+
+
+
+/* Default Button Outline
+==========================================================================*/
+.btn--default--outline,
+.default--outline {
+    @include button-version(
+        $base-color-777,
+        $btn-default-bg-outline,
+        $btn-default-border-outline
+    );
+    text-shadow: none;
+
+    &:hover {
+        border-color: $base-color-777;
+        color: $base-white;
+        background-color: $base-color-777;
+        text-decoration: none;
+    }
+    &:active {
+        @include box-shadow(
+           inset 0px 2px 4px 1px rgba(0,0,0,.15)
+        );
+    }
+}
+
+
+
+
+
+/* Default Button Gradient
+==========================================================================*/
+.btn--default--gradient,
+.default--gradient {
+    border: 1px solid $base-color-ccc;
+    @include gradient(
+        $base-color-ccc,
+        $base-off-white,
+        $base-white
+    );
+    text-shadow: 0 1px 0 rgba(255,255,255,1);
+
+    &:hover {
+        @include gradient(
+            $base-color-ccc,
+            $base-off-white,
+            $base-off-white
+        );
+    }
+
+    &:active {
+        @include box-shadow(
+            inset 0px 2px 4px 1px rgba(0,0,0,.15)
+        );
+    }
+}

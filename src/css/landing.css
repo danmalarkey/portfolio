@@ -1,0 +1,9 @@
+.intro__img {
+  max-height: 40rem;
+  overflow: hidden; }
+  .intro__img img {
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: -10rem;
+    background-size: cover; }

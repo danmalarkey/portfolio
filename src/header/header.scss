@@ -1,0 +1,49 @@
+// ================================
+//
+// $page__header
+//
+// ================================
+
+$page-header-bg: #fff;
+
+.page__header {
+    background-color: $page-header-bg;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem;
+    font-family: $meta-sans;
+    
+    a {
+        color: $dark-grey;
+        text-decoration: none;
+    }
+}
+
+.page__brand {
+    justify-content: flex-start;
+    display: flex;
+    font-size: 2.6rem;
+    font-family: $meta-sans;
+    font-weight: 100;
+    letter-spacing: -0.06rem;
+    margin-top: .2rem;
+}
+
+.page__nav {
+    justify-content: flex-end;
+    display: flex;
+    padding: 1.35rem;
+
+    a {
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        padding: 1.2rem 2.4rem;
+        font-size: 1.3rem;
+
+        &:hover {
+            background-color: $dark-grey;
+            color: $white;
+        }
+    }
+}

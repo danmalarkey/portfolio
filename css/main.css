@@ -1,0 +1,139 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+  color: #565656;
+  font-family: "ff-meta-serif-web-pro";
+  font-weight: 400;
+  line-height: 1.8;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -moz-osx-font-smoothing: grayscale;
+  /* Mox rendering */
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  -webkit-transition: all .25s ease;
+          transition: all .25s ease;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+ul, ol {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.page__header {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4rem;
+  font-family: "ff-meta-web-pro";
+}
+.page__header a {
+  color: #383838;
+  text-decoration: none;
+}
+
+.page__brand {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.6rem;
+  font-family: "ff-meta-web-pro";
+  font-weight: 100;
+  letter-spacing: -0.06rem;
+  margin-top: .2rem;
+}
+
+.page__nav {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.35rem;
+}
+.page__nav a {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.3rem;
+}
+.page__nav a:hover {
+  background-color: #383838;
+  color: #fff;
+}
+
+.intro__img {
+  position: relative;
+  max-height: 40rem;
+}
+.intro__img img {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: -10rem;
+  background-size: cover;
+}
+
+.intro__img-cover {
+  max-height: 40rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.intro__headline {
+  z-index: 3;
+  color: white;
+  margin-bottom: -7.1rem;
+  font-size: 4.6rem;
+  line-height: 0.875;
+  position: absolute;
+  font-weight: 400;
+  margin-left: 4.6rem;
+  bottom: 0;
+}
+.intro__headline span {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  padding: 1.6rem;
+}

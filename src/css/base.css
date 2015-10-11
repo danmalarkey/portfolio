@@ -1,0 +1,29 @@
+body {
+  background-color: #fff;
+  color: #565656;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -moz-osx-font-smoothing: grayscale;
+  /* Mox rendering */
+  -webkit-text-size-adjust: 100%; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+a {
+  color: red;
+  text-decoration: none;
+  transition: all .25s ease; }
+
+a:hover {
+  color: red;
+  text-decoration: underline; }
+
+ul, ol {
+  margin: 0;
+  list-style: none;
+  padding: 0; }
